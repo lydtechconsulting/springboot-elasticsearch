@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class VersionResponse {
+public class CreateItemRequest {
 
-    private String version;
+    private String name;
 }

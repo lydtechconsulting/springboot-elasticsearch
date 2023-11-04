@@ -11,18 +11,20 @@
     </appender>
 
     <!-- normal logging -->
-    <!--    <logger name="com" level="INFO"/>-->
-    <!--    <logger name="io" level="INFO"/>-->
-    <!--    <logger name="org" level="INFO"/>-->
-    <!--    <logger name="org.spring" level="INFO"/>-->
-    <!--    <logger name="demo" level="DEBUG"/>-->
-    <!--    <logger name="dev.lydtech" level="DEBUG"/>-->
+<!--    <logger name="com" level="INFO"/>-->
+<!--    <logger name="io" level="INFO"/>-->
+<!--    <logger name="org" level="INFO"/>-->
+<!--    <logger name="org.spring" level="DEBUG"/>-->
+<!--    <logger name="org.springframework" level="DEBUG"/>-->
+<!--    <logger name="demo" level="DEBUG"/>-->
+<!--    <logger name="dev.lydtech" level="DEBUG"/>-->
 
     <!-- sparse logging -->
     <logger name="com" level="WARN"/>
     <logger name="io" level="WARN"/>
     <logger name="org" level="WARN"/>
-    <logger name="org.spring" level="INFO"/>
+    <logger name="org.spring" level="WARN"/>
+    <logger name="org.springframework" level="WARN"/>
     <logger name="demo" level="INFO"/>
     <logger name="dev.lydtech" level="INFO"/>
 

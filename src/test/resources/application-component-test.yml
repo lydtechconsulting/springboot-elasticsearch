@@ -1,0 +1,8 @@
+---
+spring:
+    data:
+        elasticsearch:
+            cluster-name: elasticsearch
+            cluster-nodes: elasticsearch:9200
+    elasticsearch:
+        uris: elasticsearch:9200
