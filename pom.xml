@@ -105,6 +105,10 @@
 								<service.container.logging.enabled>false</service.container.logging.enabled>
 								<elasticsearch.enabled>true</elasticsearch.enabled>
 								<elasticsearch.image.tag>8.10.4</elasticsearch.image.tag>
+								<elasticsearch.password>password</elasticsearch.password>
+								<elasticsearch.cluster.name>elasticsearch</elasticsearch.cluster.name>
+								<elasticsearch.discovery.type>single-node</elasticsearch.discovery.type>
+								<elasticsearch.xpack.security.enabled>false</elasticsearch.xpack.security.enabled>
 								<elasticsearch.container.logging.enabled>false</elasticsearch.container.logging.enabled>
 							</systemPropertyVariables>
 						</configuration>
