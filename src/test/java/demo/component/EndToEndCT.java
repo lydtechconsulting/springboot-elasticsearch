@@ -11,7 +11,7 @@ import demo.rest.api.CreateItemRequest;
 import demo.util.TestRestData;
 import dev.lydtech.component.framework.client.elastic.ElasticsearchCtfClient;
 import dev.lydtech.component.framework.client.service.ServiceClient;
-import dev.lydtech.component.framework.extension.TestContainersSetupExtension;
+import dev.lydtech.component.framework.extension.ComponentTestExtension;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import lombok.Data;
@@ -30,14 +30,13 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
 @Slf4j
-@ExtendWith(TestContainersSetupExtension.class)
+@ExtendWith(ComponentTestExtension.class)
 @ActiveProfiles("component-test")
 public class EndToEndCT {
 
     @BeforeEach
     public void setup() {
         String serviceBaseUrl = ServiceClient.getInstance().getBaseUrl();
-        log.info("Service base URL is: {}", serviceBaseUrl);
         RestAssured.baseURI = serviceBaseUrl;
     }
 
